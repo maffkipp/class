@@ -1,0 +1,193 @@
+/* Font Variables */
+/* Color Variables */
+/* Screen Size Variables */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 auto;
+  text-align: center; }
+
+header {
+  background-color: #00a84f;
+  height: 60px;
+  text-align: center; }
+  header h1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 36pt;
+    color: white; }
+
+.hero {
+  background: url(../../images/austin.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: 55%;
+  text-align: center; }
+  .hero img {
+    margin: 20px auto; }
+
+h2, h4 {
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48pt; }
+
+h4 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30pt; }
+
+h3 {
+  color: #00a84f;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30pt;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 40px 0 10px 0; }
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
+  padding: 10px; }
+  h5 a {
+    text-decoration: none;
+    color: black; }
+    h5 a:hover, h5 a:focus {
+      color: #f37735; }
+
+.reverse-img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+
+.container {
+  margin: 0 auto;
+  max-width: 60%; }
+
+.headshot-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 50px 50px 50px; }
+  .headshot-bio img {
+    height: 200px;
+    width: 157px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    max-width: 100%;
+    margin: 0 50px 10px 0; }
+  @media screen and (max-width: 960px) {
+    .headshot-bio {
+      display: block; } }
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+h6 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 18pt;
+  text-align: left;
+  margin-bottom: 10px; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 12pt;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.austin-tidbits {
+  background-color: #e8e8e7; }
+
+.tidbit-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .tidbit-display .tidbit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0 70px 0; }
+    .tidbit-display .tidbit img, .tidbit-display .tidbit h6, .tidbit-display .tidbit p {
+      width: 300px; }
+    .tidbit-display .tidbit img {
+      padding-bottom: 30px; }
+  @media screen and (max-width: 960px) {
+    .tidbit-display {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px; } }
+
+.contact-info {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #00a84f;
+  width: 60%;
+  font-family: "Open Sans", sans-serif; }
+
+textarea.contact-info {
+  height: 150px; }
+
+footer {
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px; }
+  footer a img {
+    height: 50px;
+    margin: 5px 20px 0 20px;
+    opacity: 0.5; }
+    footer a img:hover, footer a img:focus {
+      opacity: 1;
+      cursor: pointer; }
+
+button {
+  background-color: #f37735;
+  height: 50px;
+  width: 200px;
+  border: none;
+  margin-bottom: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12pt;
+  cursor: pointer; }
+  button:hover, button:focus {
+    background-color: #00a84f; }
+
+.main-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+/*# sourceMappingURL=maps/main.css.map */

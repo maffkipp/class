@@ -1,0 +1,204 @@
+/* Font Variables */
+$roboto-slab: "Roboto Slab", sans-serif;
+$fjalla-one: "Fjalla One", sans-serif;
+$open-sans: "Open Sans", sans-serif;
+
+/* Color Variables */
+$green: #00a84f;
+$orange: #f37735;
+$gray: #e8e8e7;
+
+/* Screen Size Variables */
+$small: 640px;
+$medium: 960px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  background-color: $green;
+  height: 60px;
+  text-align: center;
+  h1 {
+    font-family: $roboto-slab;
+    font-weight: 700;
+    font-size: 36pt;
+    color: white;
+
+  }
+}
+
+.hero {
+  background: url(../../images/austin.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: 55%;
+  text-align: center;
+  img {
+    margin: 20px auto;
+  }
+}
+
+h2, h4 {
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $fjalla-one;
+  font-size: 48pt;
+}
+
+h4 {
+  font-family: $roboto-slab;
+  font-size: 30pt;
+}
+
+h3 {
+  color: $green;
+  font-family: $roboto-slab;
+  font-size: 30pt;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 40px 0 10px 0;
+}
+
+h5 {
+  font-family: $open-sans;
+  font-size: 12pt;
+  padding: 10px;
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover, &:focus {
+      color: $orange;
+    }
+  }
+}
+
+.reverse-img {
+  transform: scaleX(-1);
+}
+.container {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.headshot-bio {
+  display: flex;
+  padding:30px 50px 50px 50px;
+  img {
+    height: 200px;
+    width: 157px;
+    align-self: center;
+    max-width: 100%;
+    margin: 0 50px 10px 0;
+  }
+  @media screen and (max-width: $medium) {
+    display: block;
+  }
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+h6 {
+  font-family: $fjalla-one;
+  text-transform: uppercase;
+  font-size: 18pt;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: $open-sans;
+  text-align: left;
+  font-size: 12pt;
+  flex: 1;
+}
+
+.austin-tidbits {
+  background-color: $gray;
+}
+
+.tidbit-display {
+  display: flex;
+  justify-content: space-evenly;
+  .tidbit {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 70px 0;
+    img, h6, p {
+      width: 300px;
+    }
+    img {
+      padding-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.contact-info {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid $green;
+  width: 60%;
+  font-family: $open-sans;
+}
+
+textarea.contact-info {
+  height: 150px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  a img {
+      height: 50px;
+      margin: 5px 20px 0 20px;
+      opacity: 0.5;
+      &:hover, &:focus {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+}
+
+button {
+  background-color: $orange;
+  height: 50px;
+  width: 200px;
+  border: none;
+  margin-bottom: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-family: $open-sans;
+  letter-spacing: 2px;
+  font-size: 12pt;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: $green;
+  }
+}
+
+.main-column {
+  flex: 1;
+}
